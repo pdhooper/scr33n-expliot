@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scr33n - Chromebook Unenroll Exploit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #003366; /* Dark blue background */
+            color: #fff; /* White text color for contrast */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #003366; /* Match the background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-top: -10px; /* Adjust the margin to position it correctly */
+        }
+        h1 {
+            color: #fff; /* White color for the title */
+            font-weight: bold; /* Bold font for the title */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            color: #fff; /* White color for headings */
+            font-weight: normal;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        a {
+            color: #fff; /* White color for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .steps {
+            margin-top: 20px;
+        }
+        .steps ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        .header-image {
+            width: 50px; /* Adjust the size as needed */
+            height: 50px; /* Adjust the size as needed */
+            border-radius: 50%; /* Makes the image circular */
+            margin-right: 10px; /* Space between the image and the title */
+        }
+        .credits {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="https://files.oaiusercontent.com/file-cdQ7AvDxdT0qmqT41csD52oh?se=2024-11-14T20%3A36%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbe4fcee4-f528-4a02-a54c-9e2c55aefcd8.webp&sig=8w4A3CQnmzKJvn4by51McUrtzQOoeJ62aJ8hAGtSsiI%3D" alt="Header Image" class="header-image">
+            scr33n - Chromebook Unenroll Exploit
+        </h1>
+        <p>This exploit was discovered while I was messing around in Dev Mode. When I tried to boot back into normal mode, I accidentally pressed the refresh and power buttons simultaneously. To my surprise, after letting it load, the device entered a kiosk-like app controlled by Google.</p>
+        <p>This exploit allows you to unenroll a Chromebook by following these steps:</p>
+        <div class="steps">
+            <ol>
+                <li><strong>Powerwash your device:</strong> Reset your Chromebook to its factory settings.</li>
+                <li><strong>EC Reset during enrollment:</strong> While your device is enrolling, perform an EC reset.</li>
+                <li><strong>Restart and leave it:</strong> After the reset, let your device restart and leave it alone.</li>
+            </ol>
+        </div>
+        <p>You should end up in a kiosk-like app, but it will be Google.</p>
+    </div>
+
+    <!-- Credits Page -->
+    <div class="container credits">
+        <h2>Credits</h2>
+        <p>Founder: pddevv</p>
+    </div>
+
+    <!-- Add more content or navigation as needed -->
+</body>
+</html>
